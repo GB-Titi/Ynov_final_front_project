@@ -19,13 +19,12 @@
 ## Gestion de projet : 
 
 ***Ce projet a été créer from scratch.***
+Le lien du [projet GitHub](https://github.com/users/GB-Titi/projects/3) pour le projet final de front
 
 *Liste des collaborateurs :*
 > - MASSOUNDI Samir
 > - MATTEOLI Tristan 
 > - RUIZ Tom
-
-Le lien du [projet GitHub](https://github.com/users/GB-Titi/projects/3) pour le projet final de front
 
 ## Initlisation et lancement du projet :
 
