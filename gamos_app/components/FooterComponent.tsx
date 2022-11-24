@@ -3,18 +3,11 @@ import Image from 'next/image'
 
 const FooterComponent: React.FC = () => {
     return (
-        <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+        <footer>
+            <a>Contact</a>
+            <a>Conditions général des ventes</a>
+            <span>RIDE 2022 - tout droits réservés</span>
+        </footer>
     );
   };
 

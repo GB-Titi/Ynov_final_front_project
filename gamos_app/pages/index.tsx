@@ -6,9 +6,11 @@ export default function Home() {
   return (
     <div>
       <MenuComponent/>
-      <div>
-        <h1>Page d&apos;accueil</h1>
-      </div>
+      <main>
+        <div>
+          <h1>Page d&apos;accueil</h1>
+        </div>
+      </main>
       <FooterComponent/>
     </div>
   )
