@@ -42,13 +42,13 @@ Le lien du [projet GitHub](https://github.com/users/GB-Titi/projects/3) pour le 
 ### Maquettes : 
 
 **Structure des pages (UX)**
->*Desktop:*
+- *Desktop:*
 ![Structure application desktop](https://github.com/GB-Titi/Ynov_final_front_project/tree/main/maquettes/structure_desktop.PNG)
->*Mobile:*
+- *Mobile:*
 ![Structure application mobile](https://github.com/GB-Titi/Ynov_final_front_project/tree/main/maquettes/structure_mobile.PNG)
 
 **Design des pages (UI)**
->*Desktop:*
+- *Desktop:*
 ![Design application desktop](https://github.com/GB-Titi/Ynov_final_front_project/tree/main/maquettes/design_desktop.PNG)
->*Mobile:*
+- *Mobile:*
 ![Design application mobile](https://github.com/GB-Titi/Ynov_final_front_project/tree/main/maquettes/design_mobile.PNG)
