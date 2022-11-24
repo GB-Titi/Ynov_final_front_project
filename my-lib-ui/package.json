@@ -1,6 +1,6 @@
 {
   "name": "my-lib-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Made with create-react-library",
   "author": "samir-massoundi",
   "license": "MIT",
@@ -22,7 +22,10 @@
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
-    "storybook": "start-storybook"
+    "yalc": "npm run sass:build && npm run build && yalc publish --private",
+    "storybook": "start-storybook",
+    "sass:build": "sass src/styles/main.scss",
+    "sass:watch": "sass -w src/styles"
   },
   "peerDependencies": {
     "react": "^16.0.0"
@@ -70,5 +73,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "my-lib-ui": "file:.yalc/my-lib-ui"
+  }
 }

@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css'
 import FooterComponent from "../components/FooterComponent";
 import MenuComponent from "../components/MenuComponent";
-import  from 'my-lib-ui'
+
 export default function Home() {
   return (
     <div>
