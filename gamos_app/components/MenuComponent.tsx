@@ -1,6 +1,6 @@
 const MenuComponent: React.FC = () => {
     return (
-        <h1>Menu</h1>
+        <div className="navbar"></div>
     );
   };
 export default MenuComponent;
