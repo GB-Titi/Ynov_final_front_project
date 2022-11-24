@@ -42,13 +42,13 @@ Le lien du [projet GitHub](https://github.com/users/GB-Titi/projects/3) pour le 
 
 ### Maquettes : 
 
-> - Structure des pages (UX)
+**Structure des pages (UX)**
 >*Desktop:*
 
 >*Mobile:*
 
 
-> - Designe des pages (UI)
+**Design des pages (UI)**
 >*Desktop:*
 
 >*Mobile:*
