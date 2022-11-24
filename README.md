@@ -26,7 +26,7 @@ Le lien du [projet GitHub](https://github.com/users/GB-Titi/projects/3) pour le 
 > - MATTEOLI Tristan 
 > - RUIZ Tom
 
-## Initlisation et lancement du projet :
+## Initialisation  et lancement du projet :
 
 > A définir
 
