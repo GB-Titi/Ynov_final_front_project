@@ -4,9 +4,9 @@ Projet final front du cours de web Full-Stack
 ## Gestion de projet : 
 
 *Liste des collaborateurs :*
-> MASSOUNDI Samir
-> MATTEOLI Tristan 
-> RUIZ Tom
+> - MASSOUNDI Samir
+> - MATTEOLI Tristan 
+> - RUIZ Tom
 
 Le lien du [projet GitHub] pour le projet final de front(https://github.com/users/GB-Titi/projects/3)
 
