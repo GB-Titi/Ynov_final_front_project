@@ -9,7 +9,7 @@
 
 ## Gestion de projet : 
 
-*** Ce projet a été créer from scratch. ***
+***Ce projet a été créer from scratch.***
 
 *Liste des collaborateurs :*
 > - MASSOUNDI Samir
