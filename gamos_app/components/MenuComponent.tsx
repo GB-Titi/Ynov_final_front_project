@@ -1,13 +1,6 @@
-import Head from 'next/head'
-
 const MenuComponent: React.FC = () => {
     return (
-        <Head>
-            <title>Gamos Application</title>
-            <meta name="description" content="Bienvenue sur l'application Gamos !" />
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
+        <h1>Menu</h1>
     );
   };
-
 export default MenuComponent;
