@@ -51,4 +51,4 @@ Le lien du [projet GitHub](https://github.com/users/GB-Titi/projects/3) pour le 
 - *Desktop:*
 ![Design application desktop](https://github.com/GB-Titi/Ynov_final_front_project/tree/main/maquettes/design_desktop.PNG)
 - *Mobile:*
-!(https://github.com/GB-Titi/Ynov_final_front_project/tree/main/maquettes/design_mobile.PNG)
+![Design application mobile](https://github.com/GB-Titi/Ynov_final_front_project/tree/main/maquettes/design_mobile.PNG)
