@@ -1,6 +1,6 @@
 {
   "name": "my-lib-ui",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Made with create-react-library",
   "author": "samir-massoundi",
   "license": "MIT",
@@ -74,7 +74,5 @@
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "my-lib-ui": "file:.yalc/my-lib-ui"
-  }
+  "dependencies": {}
 }
