@@ -74,5 +74,7 @@
   "files": [
     "dist"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
 }

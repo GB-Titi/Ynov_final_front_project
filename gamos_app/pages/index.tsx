@@ -1,6 +1,6 @@
+import { LoginButtonComponent } from "my-lib-ui";
 import FooterComponent from "../components/FooterComponent";
 import MenuComponent from "../components/MenuComponent";
-import {LoginButtonComponent}  from 'my-lib-ui';
 import styles from "../styles/components/Home.module.scss"
 
 export default function Home() {
