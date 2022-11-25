@@ -1,4 +1,3 @@
-import styles from '../styles/components/Home.module.scss'
 import FooterComponent from "../components/FooterComponent";
 import MenuComponent from "../components/MenuComponent";
 
