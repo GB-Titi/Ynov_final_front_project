@@ -1,5 +1,6 @@
 import FooterComponent from "../components/FooterComponent";
 import MenuComponent from "../components/MenuComponent";
+import {LoginButtonComponent}  from 'my-lib-ui';
 import styles from "../styles/components/Home.module.scss"
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
             <br />Notre expérience est à votre service pour répondre à toutes vos demandes
             <hr />
           </div>
+          <LoginButtonComponent>wdflkf</LoginButtonComponent>
 
         </div>
         <div className={styles.container}>
