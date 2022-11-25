@@ -6,8 +6,7 @@ export default function Home() {
     <div>
       <MenuComponent/>
       <main>
-        <div>
-          <h1>Page d&apos;accueil</h1>
+        <div className={styles.background}>
         </div>
       </main>
       <FooterComponent/>
