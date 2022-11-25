@@ -4,10 +4,12 @@ import Link from 'next/link'
 const LoginFormComponent: React.FC = () => {
   return (
     <div className={styles.login_container}>
-        <Link href="/">Retour</Link>
+        <Link href="/" className={styles.backlink}>retour</Link>
         <form>
-            <h2>Connexion</h2>
-            <input placeholder="test_input"></input>
+            <span>Connexion</span>
+            <input placeholder="Username"></input>
+            <input placeholder="Password"></input>
+            <button>Connexion</button>
         </form>
     </div>
   );

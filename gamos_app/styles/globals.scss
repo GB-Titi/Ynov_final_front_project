@@ -10,5 +10,6 @@ body {
 }
 
 main{
-    height: calc(100% - $footer-height);
+  height: max-content;
+  min-height: calc(100% - $footer-height);
 }
