@@ -1,0 +1,22 @@
+//Déclaration des variables
+$color-red: #C00000;
+$color-red-hover:  hsl(0, 100%, 42%);
+$font-title: Bayon;
+$font-copyright: Abel Pro;
+$font-default: 'Abel', sans-serif;
+$font-primary: 'Roboto', sans-serif;
+$menu-height: 72px;
+$footer-height: 144px;
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: Bayon;
+    src: url(../styles/fonts/Bayon-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Abel Pro;
+    src: url(../styles/fonts/Abel-Pro.otf);
+  }

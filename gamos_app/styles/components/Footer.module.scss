@@ -1,0 +1,35 @@
+@import "../variables.scss";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: $footer-height;
+    position: relative;
+  }
+  
+  .footer_link{
+    text-decoration: underline;
+    cursor: pointer;
+    width: max-content;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 7.5px 30px;
+    font-family: $font-primary;
+  }
+  
+  .footer_span{
+    width: max-content;
+    margin: auto;
+    font-family: $font-copyright;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 13px auto 26px auto;
+  }
