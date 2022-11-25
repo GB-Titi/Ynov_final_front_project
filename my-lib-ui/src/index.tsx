@@ -1,1 +1,1 @@
-export {default as LoginButtonComponent} from "./components/LoginButtonComponent";
+export {default as RadioButtonComponent} from "./components/RadioButtonComponent";

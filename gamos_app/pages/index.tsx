@@ -1,4 +1,4 @@
-import { LoginButtonComponent } from "my-lib-ui";
+import { RadioButtonComponent } from "my-lib-ui";
 import FooterComponent from "../components/FooterComponent";
 import MenuComponent from "../components/MenuComponent";
 import styles from "../styles/components/Home.module.scss"
@@ -14,22 +14,21 @@ export default function Home() {
             <br />Notre expérience est à votre service pour répondre à toutes vos demandes
             <hr />
           </div>
-          <LoginButtonComponent>wdflkf</LoginButtonComponent>
-
         </div>
         <div className={styles.container}>
           <form action="POST" className={styles.form}>
             <h1>INSCRIPTION</h1>
             <p>Je suis :</p>
             <div className={styles.radioContainer}>
-              <label className={styles.radio}>
+              <RadioButtonComponent span="coucou"></RadioButtonComponent>
+              {/* <label className={styles.radio}>
                 <input name="radio" type="radio" checked />
                 <span>une entreprise</span>
               </label>
               <label className={styles.radio}>
                 <input name="radio" type="radio" />
                 <span>un particulier</span>
-              </label>
+              </label> */}
             </div>
             <div className={styles.fieldContainer}>
               <label>
