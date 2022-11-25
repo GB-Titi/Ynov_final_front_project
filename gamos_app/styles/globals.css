@@ -1,0 +1,75 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+<<<<<<< HEAD:gamos_app/styles/globals.scss
+@font-face {
+  font-family: Abel;
+  src: url(../styles/fonts/Abel-Pro.otf);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+=======
+>>>>>>> 8352497347fbce496816c1490ea809f3e923dd42:gamos_app/styles/globals.css
+* {
+  box-sizing: border-box;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  background-color: black;
+  color: #fff;
+  position: inherit;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 30px;
+}
+
+footer a{
+  text-decoration: underline;
+  cursor: pointer;
+  width: max-content;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+footer a:nth-child(1){
+  margin-bottom: 15px;
+}
+
+footer a:nth-child(2){
+  margin-bottom: 10px;
+}
+
+footer span{
+  width: max-content;
+  margin: auto;
+  font-family: 'Abel';
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background: black;
+  }
+}
