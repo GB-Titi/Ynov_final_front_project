@@ -10,6 +10,6 @@ body {
 }
 
 main{
-  height: 100vh;
+  height: max-content;
   min-height: calc(100% - $footer-height);
 }
