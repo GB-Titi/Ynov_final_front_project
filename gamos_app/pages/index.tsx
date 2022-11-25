@@ -1,4 +1,3 @@
-import styles from '../styles/Home.module.css'
 import FooterComponent from "../components/FooterComponent";
 import MenuComponent from "../components/MenuComponent";
 
