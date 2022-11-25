@@ -2,8 +2,14 @@
 $color-red: #C00000;
 $color-red-hover:  hsl(0, 100%, 42%);
 $font-title: Bayon;
+$font-copyright: Abel;
 
 @font-face {
     font-family: Bayon;
     src: url(../styles/fonts/Bayon-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Abel;
+    src: url(../styles/fonts/Abel-Pro.otf);
   }
