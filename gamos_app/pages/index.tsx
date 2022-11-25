@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/components/Home.module.scss'
 import FooterComponent from "../components/FooterComponent";
 import MenuComponent from "../components/MenuComponent";
 
@@ -7,8 +7,7 @@ export default function Home() {
     <div>
       <MenuComponent/>
       <main>
-        <div>
-          <h1>Page d&apos;accueil</h1>
+        <div className={styles.background}>
         </div>
       </main>
       <FooterComponent/>
