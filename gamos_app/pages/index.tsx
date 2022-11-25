@@ -1,5 +1,6 @@
 import FooterComponent from "../components/FooterComponent";
 import MenuComponent from "../components/MenuComponent";
+import {LoginButtonComponent}  from 'my-lib-ui';
 import styles from "../styles/components/Home.module.scss"
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
                 <input className={styles.radio} type="radio" id="huey" name="drone" value="huey" checked />
                   <label>Une entreprise</label>
               </div>
+
 
               <div>
                 <input className={styles.radio}  type="radio" id="dewey" name="drone" value="dewey" />
