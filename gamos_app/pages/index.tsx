@@ -1,4 +1,4 @@
-import { RadioButtonComponent } from "my-lib-ui";
+import { RadioButtonComponent, InputComponent } from "my-lib-ui";
 import FooterComponent from "../components/FooterComponent";
 import MenuComponent from "../components/MenuComponent";
 import styles from "../styles/components/Home.module.scss"
@@ -31,28 +31,16 @@ export default function Home() {
               </label> */}
             </div>
             <div className={styles.fieldContainer}>
-              <label>
-                <span>Nom</span>
-                <input type="text" />
-                <div className={styles.border}></div>
-              </label>
-              <label>
-                <span>Prénom</span>
-                <input type="text" />
-                <div className={styles.border}></div>
-              </label>
+              <InputComponent placeholder="Nom" type="text"/>
+              <InputComponent placeholder="Prénom" type="text"/>
+              <InputComponent placeholder="E-mail" type="email"/>
+              <InputComponent placeholder="Numéro de téléphone" type="tel"/>
 
-              <label>
-                <span>E-mail</span>
-                <input type="email" />
-                <div className={styles.border}></div>
-              </label>
-
-              <label>
+              {/* <label>
                 <span>Numéro de téléphone</span>
-                <input type="tel" />
+                <input type="tel"/>
                 <div className={styles.border}></div>
-              </label>
+              </label> */}
 
               <label>
                 <span>Nationalité</span>
