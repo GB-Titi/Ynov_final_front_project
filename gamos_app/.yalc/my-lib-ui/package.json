@@ -23,17 +23,18 @@
     "deploy": "gh-pages -d example/build",
     "yalc": "npm run sass:build && npm run build && yalc publish --private",
     "storybook": "start-storybook",
-    "sass:build": "sass src/styles/main.scss",
+    "sass:build": "sass src/styles/main.scss dist/index.css",
     "sass:watch": "sass -w src/styles"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^18.0.0"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
+    "next": "^13.0.5",
     "sass": "^1.56.1"
   },
-  "yalcSig": "8f9632149ebb7790598702a830ee01fa"
+  "yalcSig": "b18616670035da5ac39a0920b10298aa"
 }
