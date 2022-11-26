@@ -1,4 +1,4 @@
-import { RadioButtonComponent, InputComponent } from "my-lib-ui";
+import { RadioButtonComponent, InputComponent, LinkButtonComponent } from "my-lib-ui";
 import FooterComponent from "../components/FooterComponent";
 import MenuComponent from "../components/MenuComponent";
 import styles from "../styles/components/Home.module.scss"
@@ -55,7 +55,8 @@ export default function Home() {
               <input name="check" type="checkbox" />
               <span>j’atteste que je possède un permis de conduire valide.</span>
             </label>
-            <div className={styles.button}>Demander mon inscription</div>
+            {/* <div className={styles.button}>Demander mon inscription</div> */}
+            <LinkButtonComponent href="register_confirmation" text="Demander mon inscription" />
           </form>
         </div>
       </main>
