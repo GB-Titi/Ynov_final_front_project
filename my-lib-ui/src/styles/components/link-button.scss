@@ -1,0 +1,22 @@
+@import "../variables.scss";
+
+.link_button{
+    height: 44px;
+    width: 150px;
+    font-size: 16px;
+    background-color: $color-red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    margin-right: 9px;
+    user-select: none;
+    text-transform: none;
+
+    &:hover {
+        background-color: $color-red-hover;
+        transition: 0.4s;
+        transition-timing-function: ease-in-out;
+    }
+}
