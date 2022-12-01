@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
   font-family: Bayon;
-  src: url(./fonts/Bayon-Regular.ttf);
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 }
 @font-face {
   font-family: Abel Pro;
-  src: url(./fonts/Abel-Pro.otf);
+  src: url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 }
 .link_button {
   height: 44px;
