@@ -6,11 +6,11 @@
     justify-content: center;
     background-color: black;
     color: #fff;
-    bottom: 0;
     width: 100%;
     left: 0;
     height: $footer-height;
-    position: relative;
+    position: absolute;
+    bottom: 0;
 
     .link{
       text-decoration: underline;
