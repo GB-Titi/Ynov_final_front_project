@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d example/build",
     "yalc": "npm run sass:build && npm run build && yalc publish --private",
     "storybook": "start-storybook",
-    "sass:build": "sass src/styles/main.scss",
+    "sass:build": "sass src/index.scss",
     "sass:watch": "sass -w src/styles"
   },
   "peerDependencies": {
@@ -74,5 +74,7 @@
   "files": [
     "dist"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "i18n-iso-countries": "^7.5.0"
+  }
 }

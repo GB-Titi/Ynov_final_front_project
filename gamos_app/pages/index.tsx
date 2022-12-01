@@ -14,7 +14,6 @@ export default function Home() {
             <br />Notre expérience est à votre service pour répondre à toutes vos demandes
             <hr />
           </div>
-          <LoginButtonComponent>wdflkf</LoginButtonComponent>
 
         </div>
         <div className={styles.container}>
