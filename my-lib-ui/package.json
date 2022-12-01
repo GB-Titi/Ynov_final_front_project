@@ -76,6 +76,7 @@
     "dist"
   ],
   "dependencies": {
+    "i18n-iso-countries": "^7.5.0",
     "next": "^13.0.5",
     "sass": "^1.56.1"
   }

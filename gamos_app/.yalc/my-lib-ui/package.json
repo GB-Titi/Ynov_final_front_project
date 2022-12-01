@@ -33,8 +33,9 @@
     "dist"
   ],
   "dependencies": {
+    "i18n-iso-countries": "^7.5.0",
     "next": "^13.0.5",
     "sass": "^1.56.1"
   },
-  "yalcSig": "cd34c4637e03f18b5b2bed1434e6f301"
+  "yalcSig": "c8ac9a84cf016da9f70c090366f2b338"
 }

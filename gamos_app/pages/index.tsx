@@ -1,4 +1,4 @@
-import { RadioButtonComponent, InputComponent, LinkButtonComponent, CheckboxComponent } from "my-lib-ui";
+import { RadioButtonComponent, InputComponent, LinkButtonComponent, CheckboxComponent, SelectCountryComponent } from "my-lib-ui";
 import FooterComponent from "../components/FooterComponent";
 import MenuComponent from "../components/MenuComponent";
 import styles from "../styles/components/Home.module.scss"
@@ -32,32 +32,36 @@ export default function Home() {
               </label> */}
             </div>
             <div className={styles.fieldContainer}>
-              <InputComponent placeholder="Nom" type="text"/>
-              <InputComponent placeholder="Prénom" type="text"/>
-              <InputComponent placeholder="E-mail" type="email"/>
-              <InputComponent placeholder="Numéro de téléphone" type="tel"/>
+              <InputComponent placeholder="Nom" type="text" />
+              <InputComponent placeholder="Prénom" type="text" />
+              <InputComponent placeholder="E-mail" type="email" />
+              <InputComponent placeholder="Numéro de téléphone" type="tel" />
 
               {/* <label>
                 <span>Numéro de téléphone</span>
                 <input type="tel"/>
                 <div className={styles.border}></div>
               </label> */}
-              <label>
+
+              {/* <label>
                 <span>Nationalité</span>
                 <select>
                   <option value="">Français</option>
                   <option value="">Pas français</option>
                 </select>
-                <div className={styles.border}></div>
+              </label> */}
+              <label>
+                <span>Nationalité</span>
+                <SelectCountryComponent />
               </label>
               <label></label>
               <label className={styles.checkbox}>
-              <CheckboxComponent text="j’atteste que je possède un permis de conduire valide."></CheckboxComponent>
-            </label>
-            <label></label>
-            {/* <div className={styles.button}>Demander mon inscription</div> */}
-            <label></label>
-            <LinkButtonComponent href="register_confirmation" text="Demander mon inscription" />
+                <CheckboxComponent text="j’atteste que je possède un permis de conduire valide."></CheckboxComponent>
+              </label>
+              <label></label>
+              {/* <div className={styles.button}>Demander mon inscription</div> */}
+              <label></label>
+              <LinkButtonComponent href="register_confirmation" text="Demander mon inscription" />
             </div>
           </form>
         </div>
