@@ -2,10 +2,10 @@
 <sub>Projet final front du cours de web Full-Stack</sub>
 
 ## LANCEMENT DU PROJET :
-========================
 
 Dans la racine du projet, lancer la commande :
 ```npm run install``` 
+========================
 
  **L'objectif de se projet est de :**
   - Créer une partie front vitrine
