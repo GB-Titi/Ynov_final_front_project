@@ -1,6 +1,6 @@
+import { RadioButtonComponent, InputComponent, LinkButtonComponent } from "my-lib-ui";
 import FooterComponent from "../components/FooterComponent";
 import MenuComponent from "../components/MenuComponent";
-import {LoginButtonComponent}  from 'my-lib-ui';
 import styles from "../styles/components/Home.module.scss"
 
 export default function Home() {
@@ -14,45 +14,34 @@ export default function Home() {
             <br />Notre expérience est à votre service pour répondre à toutes vos demandes
             <hr />
           </div>
-
         </div>
         <div className={styles.container}>
           <form action="POST" className={styles.form}>
             <h1>INSCRIPTION</h1>
             <p>Je suis :</p>
             <div className={styles.radioContainer}>
-              <label className={styles.radio}>
+              <RadioButtonComponent span="une entreprise"></RadioButtonComponent>
+              <RadioButtonComponent span="un particulier"></RadioButtonComponent>
+              {/* <label className={s∑tyles.radio}>
                 <input name="radio" type="radio" checked />
                 <span>une entreprise</span>
               </label>
               <label className={styles.radio}>
                 <input name="radio" type="radio" />
                 <span>un particulier</span>
-              </label>
+              </label> */}
             </div>
             <div className={styles.fieldContainer}>
-              <label>
-                <span>Nom</span>
-                <input type="text" />
-                <div className={styles.border}></div>
-              </label>
-              <label>
-                <span>Prénom</span>
-                <input type="text" />
-                <div className={styles.border}></div>
-              </label>
+              <InputComponent placeholder="Nom" type="text"/>
+              <InputComponent placeholder="Prénom" type="text"/>
+              <InputComponent placeholder="E-mail" type="email"/>
+              <InputComponent placeholder="Numéro de téléphone" type="tel"/>
 
-              <label>
-                <span>E-mail</span>
-                <input type="email" />
-                <div className={styles.border}></div>
-              </label>
-
-              <label>
+              {/* <label>
                 <span>Numéro de téléphone</span>
-                <input type="tel" />
+                <input type="tel"/>
                 <div className={styles.border}></div>
-              </label>
+              </label> */}
 
               <label>
                 <span>Nationalité</span>
@@ -67,7 +56,8 @@ export default function Home() {
               <input name="check" type="checkbox" />
               <span>j’atteste que je possède un permis de conduire valide.</span>
             </label>
-            <div className={styles.button}>Demander mon inscription</div>
+            {/* <div className={styles.button}>Demander mon inscription</div> */}
+            <LinkButtonComponent href="register_confirmation" text="Demander mon inscription" />
           </form>
         </div>
       </main>

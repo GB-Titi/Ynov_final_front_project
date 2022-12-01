@@ -1,0 +1,24 @@
+{
+  "name": "gamos_app_installer",
+  "version": "1.0.0",
+  "description": "Install global de tout ce qui est necessaire au fonctionnement de l'applciaiton",
+  "main": "index.js",
+  "scripts": {
+    "install": "echo \"Lancement de l'installation globale\" && npm run install:global",
+    "install:global": "npm i saas -g --loglevel=error && npm i yalc -g --loglevel=error && npm i gulp -g --loglevel=error && echo \"Installation terminée. Lancement de l'installation de la lib\" && npm run install:lib",
+    "install:lib": "cd my-lib-ui && npm install --loglevel=error && echo \"Installation terminée. Creation de la lib.\" && npm run yalc && echo \"Installation terminée. Coucou je suis un easter egg, npm run easteregg ?. C'est l'heure de passer à gamos !\" && cd .. && npm run install:gamos",
+    "install:gamos": "cd gamos_app  && echo \"Installation en cours.\" && npm install --loglevel=error && echo \"Liaison avec la lib !\"  && yalc link my-lib-ui && yalc add my-lib-ui && cd.. && npm run start",
+    "start" : "cd gamos_app && npm run dev",
+    "easteregg" : "echo \"https://github.com/GB-Titi/Ynov_final_front_project/issues/43\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GB-Titi/Ynov_final_front_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GB-Titi/Ynov_final_front_project/issues"
+  },
+  "homepage": "https://github.com/GB-Titi/Ynov_final_front_project#readme"
+}
