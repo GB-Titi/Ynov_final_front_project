@@ -20,8 +20,9 @@ export default function Home() {
             <h1>INSCRIPTION</h1>
             <p>Je suis :</p>
             <div className={styles.radioContainer}>
-              <RadioButtonComponent span="coucou"></RadioButtonComponent>
-              {/* <label className={styles.radio}>
+              <RadioButtonComponent span="une entreprise"></RadioButtonComponent>
+              <RadioButtonComponent span="un particulier"></RadioButtonComponent>
+              {/* <label className={s∑tyles.radio}>
                 <input name="radio" type="radio" checked />
                 <span>une entreprise</span>
               </label>
