@@ -52,7 +52,6 @@ export default function Home() {
               </label>
               <label></label>
               <label className={styles.checkbox}>
-              <input name="check" type="checkbox" />
               <CheckboxComponent text="j’atteste que je possède un permis de conduire valide."></CheckboxComponent>
             </label>
             <label></label>
