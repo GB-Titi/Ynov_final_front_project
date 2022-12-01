@@ -1,8 +1,7 @@
-{
   "version": "v1",
   "packages": {
     "my-lib-ui": {
-      "signature": "0ca346076398de514a5f6b01c76747e9",
+      "signature": "59c0e3b6002d9cea407f87c391f73e92",
       "file": true
     }
   }
