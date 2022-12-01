@@ -5,6 +5,7 @@
 
 Dans la racine du projet, lancer la commande :
 ```npm run install``` 
+
 ========================
 
  **L'objectif de se projet est de :**
