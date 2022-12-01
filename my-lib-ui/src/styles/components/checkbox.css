@@ -1,0 +1,55 @@
+@font-face {
+  font-family: Bayon;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+@font-face {
+  font-family: Abel Pro;
+  src: url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+}
+.checkbox {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  text-align: left;
+  margin-top: 36px;
+  gap: 16px;
+}
+.checkbox input {
+  display: none;
+}
+.checkbox input + span {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+}
+.checkbox input + span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #000;
+  background: #fff;
+}
+.checkbox input + span:after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: #000;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  opacity: 0;
+  transform: scale(0, 0);
+  transition: all 0.2s cubic-bezier(0.34, 0.57, 0.67, 1.13);
+}
+.checkbox input:checked + span:after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+/*# sourceMappingURL=checkbox.css.map */

@@ -3,3 +3,4 @@ export {default as LinkButtonComponent} from "./components/LinkButtonComponent";
 export {default as ButtonComponent} from "./components/ButtonComponent";
 export {default as InputComponent} from "./components/InputComponent";
 export {default as SelectCountryComponent} from "./components/SelectCountryComponent"
+export {default as CheckboxComponent} from "./components/CheckboxComponent";

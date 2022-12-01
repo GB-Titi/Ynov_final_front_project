@@ -14,7 +14,9 @@ const MenuComponent: React.FC = () => {
       {/* <Link href="/login">
         <ButtonComponent text="Connexion"></ButtonComponent>
       </Link> */}
-      <LinkButtonComponent href="login" text="Connexion"/>
+      <div className={styles.btn_field}>
+        <LinkButtonComponent href="login" text="Connexion"/>
+      </div>
     </div>
   );
 };
