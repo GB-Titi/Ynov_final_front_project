@@ -1,5 +1,4 @@
 import React from 'react';
-import "../styles/components/link-button.scss";
 import Link from 'next/link'
 
 type LinkButtonComponentProps = {

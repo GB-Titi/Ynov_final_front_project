@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: Bayon;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+@font-face {
+  font-family: Abel Pro;
+  src: url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+}
+.input-label {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px);
+}
+.input-label span {
+  position: absolute;
+  margin-left: 16px;
+  margin-top: 11px;
+  user-select: none;
+}
+.input-label .border {
+  width: 0;
+  height: 2px;
+  background-color: #000;
+}
+
+input {
+  height: 19px;
+  background-color: #F9F9F9;
+  border: none;
+  padding: 28px 16px 13px 16px;
+  color: #C00000;
+}
+input:focus {
+  outline: none;
+}
+input:focus ~ .border {
+  width: 100%;
+  transition: all 0.4s ease-out;
+}
+
+/*# sourceMappingURL=input.css.map */

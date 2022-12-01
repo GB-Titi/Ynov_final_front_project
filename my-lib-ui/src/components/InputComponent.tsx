@@ -1,5 +1,4 @@
 import React from 'react';
-import "../styles/components/input.scss";
 // import Link from 'next/link'
 
 type InputComponentProps = {

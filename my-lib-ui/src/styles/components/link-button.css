@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: Bayon;
+  src: url(./fonts/Bayon-Regular.ttf);
+}
+@font-face {
+  font-family: Abel Pro;
+  src: url(./fonts/Abel-Pro.otf);
+}
+.link_button {
+  height: 44px;
+  width: 150px;
+  font-size: 16px;
+  background-color: #C00000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  margin-right: 9px;
+  user-select: none;
+  text-transform: none;
+}
+.link_button:hover {
+  background-color: hsl(0deg, 100%, 42%);
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+/*# sourceMappingURL=link-button.css.map */
