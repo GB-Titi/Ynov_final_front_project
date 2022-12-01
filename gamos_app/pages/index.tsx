@@ -1,4 +1,4 @@
-import { RadioButtonComponent, InputComponent, LinkButtonComponent } from "my-lib-ui";
+import { RadioButtonComponent, InputComponent, LinkButtonComponent, SelectCountryComponent } from "my-lib-ui";
 import FooterComponent from "../components/FooterComponent";
 import MenuComponent from "../components/MenuComponent";
 import styles from "../styles/components/Home.module.scss"
@@ -43,14 +43,17 @@ export default function Home() {
                 <div className={styles.border}></div>
               </label> */}
 
-              <label>
+              {/* <label>
                 <span>Nationalité</span>
                 <select>
                   <option value="">Français</option>
                   <option value="">Pas français</option>
                 </select>
-                <div className={styles.border}></div>
-              </label>
+              </label> */}
+               <label>
+                <span>Nationalité</span>
+                <SelectCountryComponent/>
+              </label> 
             </div>
             <label className={styles.checkbox}>
               <input name="check" type="checkbox" />
