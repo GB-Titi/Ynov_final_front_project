@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+my-lib-ui/package.json
+my-lib-ui/yarn.lock
+gamos_app/package.json

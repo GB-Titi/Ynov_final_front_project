@@ -1,0 +1,39 @@
+@import "../variables.scss";
+
+.input-label{
+
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    
+    span {
+        position: absolute;
+        margin-left: 16px;
+        margin-top: 11px;
+        user-select: none;
+    }
+
+    .border {
+        width: 0;
+        height: 2px;
+        background-color: #000;
+
+    }
+}
+
+input {
+    height: calc(60px - 41px);
+    background-color: $color-grey;
+    border: none;
+    padding: 28px 16px 13px 16px;
+    color: $color-red;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:focus~.border {
+        width: 100%;
+        transition: all .4s ease-out;
+    }
+}
