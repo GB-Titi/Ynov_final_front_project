@@ -1,6 +1,12 @@
 # Ynov_final_front_project
 <sub>Projet final front du cours de web Full-Stack</sub>
 
+## LANCEMENT DU PROJET :
+========================
+
+Dans la racine du projet, lancer la commande :
+```npm run install``` 
+
  **L'objectif de se projet est de :**
   - Créer une partie front vitrine
   - En se référant au maquettes du [figma](https://www.figma.com/file/g8RWbQyy4lqxbeOQBeYsV7/Gamos-2022---JoAzCo?node-id=13%3A1509) créer une page de connexion et d'inscription
