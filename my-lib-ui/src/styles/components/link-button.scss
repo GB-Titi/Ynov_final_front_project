@@ -2,7 +2,8 @@
 
 .link_button{
     height: 44px;
-    width: 150px;
+    width: 95%;
+    max-width: 343px;
     font-size: 16px;
     background-color: $color-red;
     display: flex;
@@ -10,9 +11,10 @@
     justify-content: center;
     color: white;
     cursor: pointer;
-    margin-right: 9px;
+    margin: 9px;
     user-select: none;
-    text-transform: none;
+    text-decoration: none;
+    padding: 5px 15px;
 
     &:hover {
         background-color: $color-red-hover;

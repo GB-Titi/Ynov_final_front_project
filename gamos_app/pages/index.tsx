@@ -42,7 +42,6 @@ export default function Home() {
                 <input type="tel"/>
                 <div className={styles.border}></div>
               </label> */}
-
               <label>
                 <span>Nationalité</span>
                 <select>
@@ -51,13 +50,16 @@ export default function Home() {
                 </select>
                 <div className={styles.border}></div>
               </label>
-            </div>
-            <label className={styles.checkbox}>
+              <label></label>
+              <label className={styles.checkbox}>
               <input name="check" type="checkbox" />
               <span>j’atteste que je possède un permis de conduire valide.</span>
             </label>
+            <label></label>
             {/* <div className={styles.button}>Demander mon inscription</div> */}
+            <label></label>
             <LinkButtonComponent href="register_confirmation" text="Demander mon inscription" />
+            </div>
           </form>
         </div>
       </main>
