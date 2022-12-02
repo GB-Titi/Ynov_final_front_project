@@ -36,32 +36,14 @@ export default function Home() {
               <InputComponent placeholder="Prénom" type="text" />
               <InputComponent placeholder="E-mail" type="email" />
               <InputComponent placeholder="Numéro de téléphone" type="tel" />
-
-              {/* <label>
-                <span>Numéro de téléphone</span>
-                <input type="tel"/>
-                <div className={styles.border}></div>
-              </label> */}
-
-              {/* <label>
-                <span>Nationalité</span>
-                <select>
-                  <option value="">Français</option>
-                  <option value="">Pas français</option>
-                </select>
-              </label> */}
-              <label>
+              <label className={styles.selectCountry}>
                 <span>Nationalité</span>
                 <SelectCountryComponent />
               </label>
-              <label></label>
-              <label className={styles.checkbox}>
-                <CheckboxComponent text="j’atteste que je possède un permis de conduire valide."></CheckboxComponent>
-              </label>
-              <label></label>
-              {/* <div className={styles.button}>Demander mon inscription</div> */}
-              <label></label>
-              <LinkButtonComponent href="register_confirmation" text="Demander mon inscription" />
+              <label htmlFor=""></label>
+              <CheckboxComponent text="j’atteste que je possède un permis de conduire valide."></CheckboxComponent>
+              <label htmlFor=""></label>
+              <LinkButtonComponent href="register_confirmation" text="Demander mon inscription"/>
             </div>
           </form>
         </div>

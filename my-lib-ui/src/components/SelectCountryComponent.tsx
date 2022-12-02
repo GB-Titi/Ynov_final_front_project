@@ -23,17 +23,17 @@ const SelectCountryComponent = () => {
 
 
     return (
-        <div>
-            <select name="country-select" id="country-select"
-            onChange={e => {selectCountryHandler(e.target.value)}}>
-                {!!countryArr?.length &&
-                    countryArr.map(({ label, value }) => (
-                        <option key={value} value={selectedCountry}>
-                            {label}
-                        </option>
-                    ))}
-            </select>
-        </div>
+
+        <select name="country-select" id="country-select" className='select'
+            onChange={e => { selectCountryHandler(e.target.value) }}>
+            {!!countryArr?.length &&
+                countryArr.map(({ label, value }) => (
+                    <option key={value} value={selectedCountry}>
+                        {label}
+                    </option>
+                ))}
+        </select>
+
     )
 }
 export default SelectCountryComponent;
