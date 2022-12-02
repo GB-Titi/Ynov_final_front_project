@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+
+select {
+  height: 60px;
+  background-color: $color-grey;
+  border: none;
+  padding: 28px 16px 13px 12px;
+  color: $color-red;
+
+  &:focus {
+    outline: none;
+  }
+
+}

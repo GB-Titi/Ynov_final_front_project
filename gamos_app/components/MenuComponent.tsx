@@ -8,14 +8,16 @@ const MenuComponent: React.FC = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.brand}>
-        <Image className={styles.logo} src={logo} alt="logo" width={66} height={66} />
+        <a href="/">
+          <Image className={styles.logo} src={logo} alt="logo" width={66} height={66} />
+        </a>
         <span className={styles.brand_name}>RIDE</span>
       </div>
       {/* <Link href="/login">
         <ButtonComponent text="Connexion"></ButtonComponent>
       </Link> */}
       <div className={styles.btn_field}>
-        <LinkButtonComponent href="login" text="Connexion"/>
+        <LinkButtonComponent href="login" text="Connexion" />
       </div>
     </div>
   );

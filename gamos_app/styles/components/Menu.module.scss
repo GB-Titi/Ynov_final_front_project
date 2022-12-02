@@ -18,21 +18,26 @@
         align-items: center;
         gap: 15px;
 
+        a {
+            height: 66px;
+        }
+
         .logo {
             fill: white;
             margin-left: 3px;
             user-select: none;
         }
 
-        .brand_name{
+        .brand_name {
             font-family: $font-title;
             font-weight: 400;
             font-size: 39.15px;
             user-select: none;
+            text-decoration: none;
         }
     }
 
-    .btn_field{
+    .btn_field {
         max-width: 150px;
         width: 150px;
     }
