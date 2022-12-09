@@ -27,7 +27,7 @@ const Register_conf: NextPage = () => {
             <h1>INSCRIPTION</h1>
               <div className={styles.confirmation_content}>
                 <span>Votre demande d’inscription a bien été prise en compte.<br />Vous allez recevoir une confirmation par mail, en attendant vous pouvez télécharger l’application.</span>
-              <Image className="image_store" src={merchant_center} alt="merchant_center"/>
+              <Image src={merchant_center} alt="merchant_center"/>
               </div>
             </div>
           </div>
