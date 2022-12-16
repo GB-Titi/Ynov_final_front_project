@@ -1,0 +1,192 @@
+@font-face {
+  font-family: Bayon;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+@font-face {
+  font-family: Abel Pro;
+  src: url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+}
+select {
+  height: 60px;
+  background-color: #F9F9F9;
+  border: none;
+  padding: 28px 16px 13px 12px;
+  color: #C00000;
+}
+select:focus {
+  outline: none;
+}
+
+.radio {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  text-align: left;
+}
+.radio input {
+  display: none;
+}
+.radio input + span {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+}
+.radio input + span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #000;
+  background: #fff;
+}
+.radio input + span:after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: #000;
+  position: absolute;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  opacity: 0;
+  transform: scale(0, 0);
+  transition: all 0.2s cubic-bezier(0.34, 0.57, 0.67, 1.13);
+}
+.radio input:checked + span:after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+@font-face {
+  font-family: Bayon;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+@font-face {
+  font-family: Abel Pro;
+  src: url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+}
+.link_button {
+  font-size: 16px;
+  height: 44px;
+  background-color: #C00000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  margin: 9px;
+  user-select: none;
+  text-decoration: none;
+  padding: 5px 15px;
+  grid-column-start: 2;
+}
+.link_button:hover {
+  background-color: hsl(0deg, 100%, 42%);
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+.link_button-login {
+  height: 44px;
+}
+
+@font-face {
+  font-family: Bayon;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+@font-face {
+  font-family: Abel Pro;
+  src: url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+}
+.input-label {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+.input-label span {
+  position: absolute;
+  margin-left: 16px;
+  margin-top: 11px;
+  user-select: none;
+}
+.input-label .border {
+  width: 0;
+  height: 2px;
+  background-color: #000;
+}
+
+input {
+  height: 19px;
+  background-color: #F9F9F9;
+  border: none;
+  padding: 28px 16px 13px 16px;
+  color: #C00000;
+}
+input:focus {
+  outline: none;
+}
+input:focus ~ .border {
+  width: 100%;
+  transition: all 0.4s ease-out;
+}
+
+@font-face {
+  font-family: Bayon;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+@font-face {
+  font-family: Abel Pro;
+  src: url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+}
+.checkbox {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  text-align: left;
+  margin-top: 36px;
+  gap: 16px;
+}
+.checkbox input {
+  display: none;
+}
+.checkbox input + span {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+}
+.checkbox input + span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #000;
+  background: #fff;
+}
+.checkbox input + span:after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: #000;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  opacity: 0;
+  transform: scale(0, 0);
+  transition: all 0.2s cubic-bezier(0.34, 0.57, 0.67, 1.13);
+}
+.checkbox input:checked + span:after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+/*# sourceMappingURL=index.css.map */
