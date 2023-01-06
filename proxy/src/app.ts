@@ -24,3 +24,19 @@ app.get("/api/.user", (_, res) => {
 app.listen(port, () => {
   return console.log(`Express is listening at http://localhost:${port}`);
 });
+
+app.get("/api/.user/login", (_,res) => {
+  res.send("login");
+})
+
+app.get("/api/.user/user", (_,res) => {
+  res.send("user");
+})
+
+app.get("/api/.user/admin", (_,res) => {
+  res.send("user");
+})
+
+app.get("/api/.user/checkRole", (_,res) => {
+  res.send("user");
+})
