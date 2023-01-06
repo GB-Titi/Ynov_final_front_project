@@ -19,7 +19,7 @@ class UserFixtures extends Fixture
     public function load(ObjectManager $manager): void
     {
         $user = new User();
-        $user->setEmail('user@myapp.com');
+        $user->setEmail('user@gamos.com');
 
         $password = $this->hasher->hashPassword($user, 'user');
         $user->setPassword($password);
@@ -28,7 +28,7 @@ class UserFixtures extends Fixture
         $manager->persist($user);
 
         $admin = new User();
-        $admin->setEmail("admin@myapp.com");
+        $admin->setEmail("admin@gamos.com");
         $passwordAdmin = $this->hasher->hashPassword($user, 'admin');
         $admin->setPassword($passwordAdmin);
         $admin->setRoles(["ROLE_ADMIN"]);

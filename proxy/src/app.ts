@@ -16,9 +16,9 @@ app.get("/api", (_, res) => {
 });
 
 app.get("/api/.user", (_, res) => {
-  axios.get("http://nginx/api/hello").then((onfulfilled) => {
+  axios.get("http://nginx/hello").then((onfulfilled) => {
     res.send(onfulfilled.data);
-  });
+  }).catch((error)  => res.send(error.message));
 });
 
 app.listen(port, () => {

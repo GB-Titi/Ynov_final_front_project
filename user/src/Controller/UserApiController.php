@@ -7,7 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/api/user', name: 'app_user_api')]
+#[Route('/api/.user', name: 'app_user_api')]
 class UserApiController extends AbstractController
 {
     
@@ -32,5 +32,15 @@ class UserApiController extends AbstractController
             ], Response::HTTP_BAD_REQUEST);
         }
         return $this->json(in_array($role, $user->getRoles()));
+    }
+
+    #[Route('/inscription', methods: "GET")]
+    public function register(): Response
+    {
+        $user = $this->getUser();
+        return $this->json([
+            'user' => $user->getUserIdentifier(),
+            'roles' => $user->getRoles()]
+        );
     }
 }
