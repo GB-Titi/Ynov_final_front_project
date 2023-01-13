@@ -19,7 +19,7 @@ class DefaultController extends AbstractController
         ]);
     }
 
-    #[Route('/hello')]
+    #[Route('/api/hello')]
     public function indexApi(): Response
     {
         return $this->json("Hello API service User");
