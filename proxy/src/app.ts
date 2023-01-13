@@ -24,6 +24,13 @@ app.get("/api/.user", (_, res) => {
   }).catch((error) => res.send(error.message));
 });
 
+app.post("/api/.user/inscription", (_, res) => {
+  axios.post("http://nginx/inscription").then((onfulfilled) => {
+    res.send(onfulfilled.data);
+  })
+  // .catch((error)  => res.send(error.message));
+});
+
 app.listen(port, () => {
   return console.log(`Express is listening at http://localhost:${port}`);
 });
