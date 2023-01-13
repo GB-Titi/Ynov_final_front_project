@@ -34,4 +34,16 @@ class UserApiController extends AbstractController
         return $this->json(in_array($role, $user->getRoles()));
     }
 
+    #[Route('/login', name: 'app_user_api_login', methods: "POST")]
+    public function userLogin(Request $request){
+        // $user = $this->getUser();
+
+        $user = $this->getUser();
+        return $this->json([
+            'user' => $user->getUserIdentifier(),
+            'roles' => $user->getRoles()]
+        );
+    }
+
+
 }

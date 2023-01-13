@@ -24,15 +24,15 @@ app.get("/api/.user", (_, res) => {
   }).catch((error) => res.send(error.message));
 });
 
-app.post("/api/.user/inscription", (_, res) => {
-  axios.post("http://nginx/inscription").then((onfulfilled) => {
-    res.send(onfulfilled.data);
-  })
-  // .catch((error)  => res.send(error.message));
-});
-
 app.listen(port, () => {
   return console.log(`Express is listening at http://localhost:${port}`);
+});
+
+app.post("/api/.user/inscription", (_, res) => {
+  axios.post("http://nginx/api/inscription").then((onfulfilled) => {
+    res.send(onfulfilled.data);
+  }).catch((error) => res.send(error.message));
+  // .catch((error)  => res.send(error.message));
 });
 
 app.post("/api/.user/login", (req, res) => {
@@ -41,7 +41,7 @@ app.post("/api/.user/login", (req, res) => {
   new Promise((resolve) => {
     axios
       .post(
-        'http://nginx/api/user',
+        'http://nginx/api/.user/login',
         { username, password },
         {
           headers: {
