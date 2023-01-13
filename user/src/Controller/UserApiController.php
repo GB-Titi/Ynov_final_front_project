@@ -34,13 +34,4 @@ class UserApiController extends AbstractController
         return $this->json(in_array($role, $user->getRoles()));
     }
 
-    #[Route('/inscription', methods: "GET")]
-    public function register(): Response
-    {
-        $user = $this->getUser();
-        return $this->json([
-            'user' => $user->getUserIdentifier(),
-            'roles' => $user->getRoles()]
-        );
-    }
 }
