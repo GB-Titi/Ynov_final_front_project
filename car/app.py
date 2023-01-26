@@ -53,12 +53,26 @@ def singleCar(id):
     return jsonify("Aucune voiture ne porte cet ID")
 
 
-@app.route("/update", methods=['POST'])
-def update():
-    data = json.loads(request.data)
-    return jsonify(data["a"] + data["b"])
+@app.route("/car/<int:id>", methods=['PUT'])
+def update(id):
+    car = CarModel.query.filter_by(id=id).first()
+    if car:
+        db.session.delete(car)
+        db.session.commit()
+        name=request.json['name']
+        price=request.json['price']
+        image =request.json['image']
+        newCar=CarModel(name=name, price=price, image=image)
+        db.session.add(newCar)
+        db.session.commit()
+        return jsonify('actualisation effectuée')
+    return jsonify('erreur actualisation ')
 
-@app.route("/delete", methods=['POST'])
-def delete():
-    data = json.loads(request.data)
-    return jsonify(data["a"] + data["b"])
+@app.route("/car/<int:id>", methods=['DELETE'])
+def delete(id):
+    car = CarModel.query.filter_by(id=id).first()
+    if car:
+        db.session.delete(car)
+        db.session.commit()
+        return jsonify("suppression effectuée")
+    return jsonify('erreur dans la suppression')
