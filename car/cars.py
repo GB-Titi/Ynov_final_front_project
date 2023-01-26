@@ -1,18 +1,23 @@
 from flask_sqlalchemy import SQLAlchemy
+from dataclasses import dataclass
+
  
 db = SQLAlchemy()
- 
+
+@dataclass
 class CarModel(db.Model):
+    id:int
+    name:str
+    price:str
+    image:str
     __tablename__ = "cars"
  
     id = db.Column(db.Integer, primary_key=True)
-    car_id = db.Column(db.Integer(),unique = True)
-    name = db.Column(db.String(10))
+    name = db.Column(db.String(255))
     price = db.Column(db.Integer())
     image = db.Column(db.String(255))
  
-    def __init__(self, car_id,name,price,image):
-        self.car_id = car_id
+    def __init__(self,name,price,image):
         self.name = name
         self.price = price
         self.image = image

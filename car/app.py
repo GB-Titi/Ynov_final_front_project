@@ -20,8 +20,18 @@ def hello():
 
 @app.route("/add", methods=['POST'])
 def add():
-    data = json.loads(request.data)
-    return jsonify(data["a"] + data["b"])
+    if request.method == 'POST':
+
+        data = json.loads(request.data)
+        print(data)
+        name=request.json['name']
+        price=request.json['price']
+        image =request.json['image']
+        newCar=CarModel(name=name, price=price, image=image)
+        db.session.add(newCar)
+        db.session.commit()
+
+        return jsonify(data)
 
 @app.route("/remove", methods=['POST'])
 def remove():
@@ -29,11 +39,26 @@ def remove():
     return jsonify(data["a"] + data["b"])
 
 @app.route("/car", methods=['GET'])
-def car():
-    data = json.loads(request.data)
-    return jsonify(data["a"] + data["b"])
+def allCars():
+    car = CarModel.query.all()
+    # data = json.loads(request.data)
+    return jsonify(car)
+
+@app.route("/car/<int:id>", methods=['GET'])
+def singleCar(id):
+    car = CarModel.query.filter_by(id=id).first()
+    # data = json.loads(request.data)
+    if car:
+        return jsonify(car)
+    return jsonify("Aucune voiture ne porte cet ID")
+
 
 @app.route("/update", methods=['POST'])
 def update():
+    data = json.loads(request.data)
+    return jsonify(data["a"] + data["b"])
+
+@app.route("/delete", methods=['POST'])
+def delete():
     data = json.loads(request.data)
     return jsonify(data["a"] + data["b"])
