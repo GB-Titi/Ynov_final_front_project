@@ -1,8 +1,10 @@
 from flask import Flask, jsonify, request
+from cars import db,CarModel
+
 import json
  
 app =Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///<db_name>.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://admin:admin@db:3306/lesson'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
  
