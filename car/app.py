@@ -33,11 +33,6 @@ def add():
 
         return jsonify(data)
 
-@app.route("/remove", methods=['POST'])
-def remove():
-    data = json.loads(request.data)
-    return jsonify(data["a"] + data["b"])
-
 @app.route("/car", methods=['GET'])
 def allCars():
     car = CarModel.query.all()
@@ -55,15 +50,12 @@ def singleCar(id):
 
 @app.route("/car/<int:id>", methods=['PUT'])
 def update(id):
-    car = CarModel.query.filter_by(id=id).first()
+    car = CarModel.query.get(id)
     if car:
-        db.session.delete(car)
-        db.session.commit()
-        name=request.json['name']
-        price=request.json['price']
-        image =request.json['image']
-        newCar=CarModel(name=name, price=price, image=image)
-        db.session.add(newCar)
+        car.name=request.json['name']
+        car.price=request.json['price']
+        car.image =request.json['image']
+        db.session.add(car)
         db.session.commit()
         return jsonify('actualisation effectuée')
     return jsonify('erreur actualisation ')

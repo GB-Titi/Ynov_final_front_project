@@ -10,6 +10,7 @@ services:
       - ./user/vendor:/var/www/vendor
     networks:
       - app-network
+  # Flask Python Car service
   car:
     build: ./car
     container_name: service-car
