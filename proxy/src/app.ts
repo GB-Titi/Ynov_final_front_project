@@ -29,26 +29,26 @@ app.listen(port, () => {
 });
 
 app.post("/api/.user/inscription", (req, res) => {
-  const username = req.body.username;
+  const email = req.body.email;
   const firstname = req.body.firstname;
   const lastname = req.body.lastname;
   const phone = req.body.phone;
   const nationality = req.body.nationality;
-  new Promise((resolve) => {
+  // new Promise((resolve) => {
       axios
-          .post('http://nginx/api/login_check', { username, firstname, lastname, phone, nationality }, {
+          .post('http://nginx/api/.user/inscription', { email, firstname, lastname, phone, nationality }, {
           headers: {
               "Content-Type": "application/json",
           },
       })
           .then((response) => {
-          resolve(response.data);
+          // resolve(response.data);
           res.send(response.data);
       })
           .catch((error) => {
           console.log(error);
       });
-  });
+  // });
 });
 
 app.post("/api/.user/login", (req, res) => {

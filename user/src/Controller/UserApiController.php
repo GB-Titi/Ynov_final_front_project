@@ -69,7 +69,7 @@ class UserApiController extends AbstractController
         // $future_user->setPassword($password);
         // $future_user->setRoles(["ROLE_USER"]);
 
-        return $this->json("Inscription service reached, voici le future_user : ".$future_user);
+        return $this->json($future_user);
     }
 
 
