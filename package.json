@@ -22,5 +22,9 @@
     "bugs": {
         "url": "https://github.com/GB-Titi/Ynov_final_front_project/issues"
     },
-    "homepage": "https://github.com/GB-Titi/Ynov_final_front_project#readme"
+    "homepage": "https://github.com/GB-Titi/Ynov_final_front_project#readme",
+    "dependencies": {
+        "gulp": "^4.0.2",
+        "saas": "^1.0.0"
+    }
 }

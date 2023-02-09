@@ -40,6 +40,28 @@
     .btn_field {
         max-width: 150px;
         width: 150px;
+
+        a {
+            font-size: 16px;
+            height: 44px;
+            background-color: $color-red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+            margin: 9px;
+            user-select: none;
+            text-decoration: none;
+            padding: 5px 15px;
+            grid-column-start: 2;
+
+            &:hover {
+                background-color: $color-red-hover;
+                transition: 0.4s;
+                transition-timing-function: ease-in-out;
+            }
+        }
     }
 
 }
