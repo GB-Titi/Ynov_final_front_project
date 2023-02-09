@@ -7,6 +7,8 @@ export const urlsAcceptedWithoutConnection = [
     '/api/.user',
     '/api/user/login',
     '/api/.user/inscription',
-    '/api/user/inscription'
+    '/api/user/inscription',
+    '/api/future-user'
+
   ];
   

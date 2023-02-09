@@ -35,18 +35,18 @@ app.post("/api/.user/inscription", (req, res) => {
   const phone = req.body.phone;
   const nationality = req.body.nationality;
   new Promise((resolve) => {
-      axios
-          .post('http://nginx/api/login_check', { username, firstname, lastname, phone, nationality }, {
-          headers: {
-              "Content-Type": "application/json",
-          },
+    axios
+      .post('http://nginx/api/login_check', { username, firstname, lastname, phone, nationality }, {
+        headers: {
+          "Content-Type": "application/json",
+        },
       })
-          .then((response) => {
-          resolve(response.data);
-          res.send(response.data);
+      .then((response) => {
+        resolve(response.data);
+        res.send(response.data);
       })
-          .catch((error) => {
-          console.log(error);
+      .catch((error) => {
+        console.log(error);
       });
   });
 });
@@ -54,13 +54,12 @@ app.post("/api/.user/inscription", (req, res) => {
 app.post("/api/.user/login", (req, res) => {
   const username = req.body.username
   const password = req.body.password
-  
-  console.log("i'm here 3")
+
   new Promise((resolve) => {
     axios
       .post(
         'http://nginx/api/login_check',
-        { username, password }, 
+        { username, password },
         {
           headers: {
             "Content-Type": "application/json",
@@ -113,4 +112,22 @@ app.post("/api/.user/checkRole", (req, res) => {
         res.send(onfulfilled);
       });
   });
+})
+
+app.get("/api/future-user", (req, res) => {
+
+  new Promise((resolve) => {
+    axios.get(
+      '/api/future-user'
+    )
+      .then((response) => {
+        resolve(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+      .then((onfulfilled) => {
+        res.send(onfulfilled);
+      });
+  })
 })
