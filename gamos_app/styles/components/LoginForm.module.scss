@@ -6,6 +6,7 @@
     margin: auto;
     height: max-content;
 
+
     .backlink{
         font-family: $font-primary;
         font-weight: 700;
@@ -63,4 +64,8 @@
     display: flex;
     flex-direction: column;
     align-content: center;
+}
+
+.main{
+    min-height: 100vh;
 }

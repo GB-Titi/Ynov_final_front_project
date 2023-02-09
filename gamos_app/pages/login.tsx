@@ -11,7 +11,7 @@ const Login: NextPage = () => {
   return (
     <div className={styles.container}>
       <MenuComponent />
-      <main>
+      <main className={styles.main}>
         <LoginFormComponent/>
       </main>
       <FooterComponent />
