@@ -23,13 +23,16 @@ class FutureUser
     private ?string $firstname = null;
 
     #[ORM\Column]
-    private ?int $phone_number = null;
+    private ?string $phone_number = null;
 
     #[ORM\Column(length: 255)]
     private ?string $nationality = null;
 
     #[ORM\Column]
     private ?bool $valid_register = null;
+
+    #[ORM\Column]
+    private ?bool $entreprise = null;
 
     public function getId(): ?int
     {
@@ -72,12 +75,12 @@ class FutureUser
         return $this;
     }
 
-    public function getPhoneNumber(): ?int
+    public function getPhoneNumber(): ?string
     {
         return $this->phone_number;
     }
 
-    public function setPhoneNumber(int $phone_number): self
+    public function setPhoneNumber(string $phone_number): self
     {
         $this->phone_number = $phone_number;
 
@@ -104,6 +107,18 @@ class FutureUser
     public function setValidRegister(bool $valid_register): self
     {
         $this->valid_register = $valid_register;
+
+        return $this;
+    }
+
+    public function isEntreprise(): ?bool
+    {
+        return $this->entreprise;
+    }
+
+    public function setEntreprise(bool $entreprise): self
+    {
+        $this->entreprise = $entreprise;
 
         return $this;
     }
