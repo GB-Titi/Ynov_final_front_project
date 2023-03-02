@@ -24,7 +24,7 @@ const SelectCountryComponent = () => {
 
     return (
 
-        <select name="country-select" id="country-select" className='select'
+        <select name="countrySelect" id="countrySelect" className='select'
             onChange={e => { selectCountryHandler(e.target.value) }}>
             {!!countryArr?.length &&
                 countryArr.map(({ label, value }) => (

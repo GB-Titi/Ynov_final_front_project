@@ -4,6 +4,7 @@ import "../styles/components/input.css";
 declare const _default: import("@storybook/csf").ComponentAnnotations<import("@storybook/react").ReactFramework, {
     placeholder: string;
     type: string;
+    name: string;
 }>;
 export default _default;
 export declare const InputComponentView: ComponentStory<typeof InputComponent>;

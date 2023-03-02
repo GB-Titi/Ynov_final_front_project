@@ -33,11 +33,13 @@ var ButtonComponent = function ButtonComponent(_ref) {
 
 var InputComponent = function InputComponent(_ref) {
   var placeholder = _ref.placeholder,
-    type = _ref.type;
+    type = _ref.type,
+    name = _ref.name;
   return React__default.createElement("label", {
     className: 'input-label'
   }, React__default.createElement("span", null, placeholder), React__default.createElement("input", {
-    type: type
+    type: type,
+    name: name
   }), React__default.createElement("div", {
     className: 'border'
   }));
@@ -64,8 +66,8 @@ var SelectCountryComponent = function SelectCountryComponent() {
     };
   });
   return React__default.createElement("select", {
-    name: "country-select",
-    id: "country-select",
+    name: "countrySelect",
+    id: "countrySelect",
     className: 'select',
     onChange: function onChange(e) {
       selectCountryHandler(e.target.value);

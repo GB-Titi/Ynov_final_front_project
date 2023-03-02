@@ -1,9 +1,30 @@
 import { RadioButtonComponent, InputComponent, LinkButtonComponent, CheckboxComponent, SelectCountryComponent } from "my-lib-ui";
+import { useRef, useState } from "react";
 import FooterComponent from "../components/FooterComponent";
 import MenuComponent from "../components/MenuComponent";
 import styles from "../styles/components/Home.module.scss"
 
 export default function Home() {
+  const formRef = useRef<HTMLFormElement>(null)
+
+  const handleSubmit = (e: React.SyntheticEvent) => {
+    e.preventDefault()
+    const target = e.target as typeof e.target & {
+      email: { value: string };
+      surname: { value: string };
+      phone: { value: string };
+      name: { value: string };
+      countrySelect: {value: string};
+    };
+    const email = target.email.value;
+    const surname = target.surname.value;
+    const phone = target.phone.value;
+    const name = target.name.value;
+    const countrySelect = target.countrySelect.value;
+
+    console.log("Handle submit", email, surname, phone, name, countrySelect)
+  }
+
   return (
     <div>
       <MenuComponent />
@@ -16,7 +37,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.container}>
-          <form action="POST" className={styles.form}>
+          <form action="POST" className={styles.form} onSubmit={handleSubmit} ref={formRef}>
             <h1>INSCRIPTION</h1>
             <p>Je suis :</p>
             <div className={styles.radioContainer}>
@@ -32,10 +53,10 @@ export default function Home() {
               </label> */}
             </div>
             <div className={styles.fieldContainer}>
-              <InputComponent placeholder="Nom" type="text" />
-              <InputComponent placeholder="Prénom" type="text" />
-              <InputComponent placeholder="E-mail" type="email" />
-              <InputComponent placeholder="Numéro de téléphone" type="tel" />
+              <InputComponent placeholder="Nom" type="text" name="name" />
+              <InputComponent placeholder="Prénom" type="text" name="surname" />
+              <InputComponent placeholder="E-mail" type="email" name="email" />
+              <InputComponent placeholder="Numéro de téléphone" type="tel" name="phone" />
               <label className={styles.selectCountry}>
                 <span>Nationalité</span>
                 <SelectCountryComponent />
@@ -43,7 +64,8 @@ export default function Home() {
               <label htmlFor=""></label>
               <CheckboxComponent text="j’atteste que je possède un permis de conduire valide."></CheckboxComponent>
               <label htmlFor=""></label>
-              <LinkButtonComponent href="register_confirmation" text="Demander mon inscription"/>
+              <LinkButtonComponent href="register_confirmation" text="Demander mon inscription" />
+              <button type="submit"> Go</button>
             </div>
           </form>
         </div>
