@@ -1,14 +1,14 @@
 import express, { response } from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
-import tokenCheck from "./middlewares/tokenCheck";
+// import tokenCheck from "./middlewares/tokenCheck";
 
 const app = express();
 const port = 8000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(tokenCheck());
+// app.use(tokenCheck());
 
 app.get("/api", (_, res) => {
   res.send("Hello API");

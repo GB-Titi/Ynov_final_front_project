@@ -18,12 +18,12 @@ export const endPointServiceUserCheckRole = `${endPointServiceUserInfo}/check_ro
 export const endPointServiceUserInscription = `${urlServerServiceUser}/inscription`;
 export const endPointServiceUserFutureUser = `${urlServerServiceUser}/future-user`;
 
-export const urlsAcceptedWithoutConnection = [
-  urlApi,
-  urlApiUser,
-  urlApiUserLogin,
-  urlApiUserInscription,
-  endPointServiceUserInscription,
-  endPointServiceUserLogin,
-  endPointServiceUserFutureUser
-];
+// export const urlsAcceptedWithoutConnection = [
+//   urlApi,
+//   urlApiUser,
+//   urlApiUserLogin,
+//   urlApiUserInscription,
+//   endPointServiceUserInscription,
+//   endPointServiceUserLogin,
+//   endPointServiceUserHello,
+// ];

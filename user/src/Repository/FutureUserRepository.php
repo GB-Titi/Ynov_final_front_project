@@ -42,18 +42,27 @@ class FutureUserRepository extends ServiceEntityRepository
 //    /**
 //     * @return FutureUser[] Returns an array of FutureUser objects
 //     */
-//    public function findByExampleField($value): array
-//    {
-//        return $this->createQueryBuilder('f')
-//            ->andWhere('f.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->orderBy('f.id', 'ASC')
-//            ->setMaxResults(10)
-//            ->getQuery()
-//            ->getResult()
-//        ;
-//    }
+   public function findById($value): array
+   {
+       return $this->createQueryBuilder('f')
+           ->andWhere('f.id = :val')
+           ->setParameter('val', $value)
+           ->orderBy('f.id', 'ASC')
+           ->setMaxResults(10)
+           ->getQuery()
+           ->getResult()
+       ;
+   }
 
+// public function findAll(): array
+// {
+//     return $this->createQuery()
+//         ->select('*')
+//         ->from('future_user')
+//         ->orderBy('id', "ASC")
+//         ->getQuery()
+//         ->getResult();
+// }
 //    public function findOneBySomeField($value): ?FutureUser
 //    {
 //        return $this->createQueryBuilder('f')
