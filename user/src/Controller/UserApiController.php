@@ -87,7 +87,7 @@ class FutureUserApiController extends AbstractController
     #[Route('/', methods: "GET")]
     public function get_future_users(FutureUserRepository $futureUserRepository)
     {
-        echo ("getting all users");
+        echo("<script>console.log('Récupération des futures users')</script>");
         $future_users = $futureUserRepository->findAll();
         echo($future_users);
         return  $this->json($future_users);
