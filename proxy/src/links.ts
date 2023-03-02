@@ -9,6 +9,5 @@ export const urlsAcceptedWithoutConnection = [
     '/api/.user/inscription',
     '/api/user/inscription',
     '/api/future-user'
-
   ];
   

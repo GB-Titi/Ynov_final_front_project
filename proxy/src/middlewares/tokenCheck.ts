@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { urlsAcceptedWithoutConnection } from "../links";
+import { urlsAcceptedWithoutConnection } from "../types";
 
 export default module.exports = function () {
   return function (req: Request, res: Response, next: () => void) {
